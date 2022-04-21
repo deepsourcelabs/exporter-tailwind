@@ -36,7 +36,7 @@ module.exports = {
         {[ const screenTokens = ds.tokensByGroupId(group.id) /]}
         {[ for token in screenTokens ]}
         {[ let tokenName = token.name.replacing("$", "").replacing(" ", "-") /]}
-        '{{ tokenName }}': '{[ inject "rendered-token-var" context token /]}'
+        '{{ tokenName }}': '{[ inject "rendered-value" context token /]}',
         {[/]}
         {[/]}
     {[/]}
